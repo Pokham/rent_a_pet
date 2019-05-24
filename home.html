@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	
+    <meta name="viewport" 
+    content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" 
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+   
+	<meta charset="utf-8">
+	<title>Rent-A-Pet</title>
+	
+
+<!--style-->	
+<style type="text/css">
+	
+#header {
+  
+    width: 100%;
+}
+
+.footer {
+    
+    background-color: black;
+    color: gray;
+    left: 0;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    overflow:hidden;
+}
+
+
+.say {
+	  
+	  border: 4px solid black;
+	  background-color: black;
+	  color: white;
+	}	
+	
+	
+.jumbotron	{
+  background-color: #32CD32;
+  margin-bottom: 0;
+  color: white;
+  
+}
+
+	
+.ml11 {
+  font-weight: 900;
+  font-size: 3.5em;
+}
+
+.ml11 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+  
+}
+
+.ml11 .line {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 3px;
+  background-color: #FF0000;
+  transform-origin: 0 50%;
+}
+
+.ml11 .line1 { 
+  top: 0; 
+  left: 0;
+}
+
+.ml11 .letter {
+  display: inline-block;
+  line-height: 1em;
+  color: #000080;
+  text-align: center; 
+}
+
+</style>
+
+<!--style--> 
+
+</head>
+
+<body>
+  
+<!--header--> 
+<center>
+<div id="header">
+    <a href="home.php" alt="Rent-A-Pet - Home" >
+    <img src="https://www.dealwithautism.com/news/wp-content/uploads/Autism-and-Pets.jpg" 
+      alt="volimage" style="width: 100%">
+    </a>
+</div>
+</center>
+<!--end of header--> 
+
+<!--start of navbar--> 
+<nav class="navbar navbar-inverse bg-inverse" style = "margin: 0px;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Rent-A-Pet</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="home.html">Home</a></li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" 
+         >Query All Tables
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="DemoNo2/Demo2_AnimalsTable.php">Animals Table</a></li>
+          <li><a href="DemoNo2/Demo2_BranchTable.php">Branch Table</a></li>
+          <li><a href="DemoNo2/Demo2_CharityTable.php">Charity Table</a></li>
+          <li><a href="DemoNo2/Demo2_CustomerTable.php">Customer Table</a></li>
+          <li><a href="DemoNo2/Demo2_GroomerTable.php">Groomer Table</a></li>
+          <li><a href="DemoNo2/Demo2_MedicalTable.php">Medical Table</a></li>
+          <li><a href="DemoNo2/Demo2_OrganizationTable.php">Organization Table</a></li>
+          <li><a href="DemoNo2/Demo2_StaffTable.php">Staff Table</a></li>
+          <li><a href="DemoNo2/Demo2_SupplliesTable.php">Supplies Table</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown">
+          Query Aggregate Tables
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="DemoNo3/Demo3_AggAnimalTable.php">Animals Table</a></li>
+          <li><a href="DemoNo3/Demo3_AggBranchTable.php">Branch Table</a></li>
+          <li><a href="DemoNo3/Demo3_AggCharityTable.php">Charity Table</a></li>
+          <li><a href="DemoNo3/Demo3_AggCustomerTable.php">Customer Table</a></li>
+          <li><a href="DemoNo3/Demo3_AggGroomerTable.php">Groomer Table</a></li>
+          <li><a href="DemoNo3/Demo3_AggMedicalTable.php">Medical Table</a></li>
+          <li><a href="DemoNo3/Demo3_AggOrganizationTable.php">Organization Table</a></li>
+          <li><a href="DemoNo3/Demo3_AggStaff.php">Staff Table</a></li>
+          <li><a href="DemoNo3/Demo3_AggSupplies.php">Supplies Table</a></li>
+        </ul>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" 
+         >Query All Tables
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="DemoNo4/Demo4_JoinAnimals.php">Animals Table</a></li>
+          <li><a href="DemoNo4/Demo4_JoinBranch.php">Branch Table</a></li>
+          <li><a href="DemoNo4/Demo4_JoinCharity.php">Charity Table</a></li>
+          <li><a href="DemoNo4/Demo4_JoinCustomer.php">Customer Table</a></li>
+          <li><a href="DemoNo4/Demo4_JoinGroomer.php">Groomer Table</a></li>
+          <li><a href="DemoNo4/Demo4_JoinMedical.php">Medical Table</a></li>
+          <li><a href="DemoNo4/Demo4_JoinOrganization.php">Organization Table</a></li>
+          <li><a href="DemoNo4/Demo4_JoinStaff.php">Staff Table</a></li>
+          <li><a href="DemoNo4/Demo4-JoinSupplies.php">Supplies Table</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown">
+          Insert Options
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="DemoInsert/Insert-Organization.html">Organization</a></li>
+          <li><a href="DemoNo4/Demo4_JoinBranch.php">Branch Table</a></li>
+          <li><a href="DemoNo4/Demo4_JoinCharity.php">Charity Table</a></li>
+          <li><a href="DemoNo4/Demo4_JoinCustomer.php">Customer Table</a></li>
+          <li><a href="DemoNo4/Demo4_JoinGroomer.php">Groomer Table</a></li>
+          <li><a href="DemoNo4/Demo4_JoinMedical.php">Medical Table</a></li>
+          <li><a href="DemoNo4/Demo4_JoinOrganization.php">Organization Table</a></li>
+          <li><a href="DemoNo4/Demo4_JoinStaff.php">Staff Table</a></li>
+          <li><a href="DemoNo4/Demo4-JoinSupplies.php">Supplies Table</a></li>
+        </ul>
+      </li>
+   
+    </ul>
+    
+    <form class="navbar-form navbar-right" method="post" 
+      action="search-results.php">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search">
+        <div class="input-group-btn">
+          <button class="btn btn-default" type="submit">
+            <i class="glyphicon glyphicon-search"></i>
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</nav>
+<!--end of navbar--> 
+
+<!--boostrap carousel-->
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <!--<li data-target="#carousel-example-generic" data-slide-to="2"></li>-->
+  </ol>
+ 
+<!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="cute-matching-pets-warren-photographic-31-57e935338ed16__880.jpg" alt="rabbit and kitten" style="height: 650px; width: 1800px;">
+      <div class="carousel-caption">
+      </div>
+    </div>
+    <div class="item">
+      <img src="pets4-1.jpg" alt="puppy behind bars" style="height: 650px; width: 1800px;">
+      <div class="carousel-caption">
+      </div>
+    </div>
+    <div class="item">
+      <img src="puppies16n-1-web.jpg" alt="puppies in crate" style="height: 650px; width: 1800px;">
+      <div class="carousel-caption">
+      </div>
+    </div>
+  </div>
+ 
+<!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div> 
+<!-- Carousel -->
+
+<!--end of bootstrap carousel -->
+
+<!--Catchy phrase--> 
+<center>
+<h1 class="ml11">
+  <span class="text-wrapper">
+    <span class="line line1"></span>
+    <span class="letters">Rent-A-Pet brings families together </span>
+  </span>
+</h1>
+</center>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<!--end of catchy phrase--> 
+
+<!--featured opportunity--> 
+<div class="jumbotron">
+  <h1 class="display-3">Come meet your next best friend!</h1>
+  <p> Your companion is waiting for you...</p>
+  <p><a class="btn btn-primary btn-lg" href="build-houston.php">Learn more</a></p>
+</div>
+<!--end of featured opportunity-->
+
+<!--footer-->
+<div class="footer">
+  <p><center>&copy 2018 Rent-A-Pet (Database Project)</center></p>    
+</div>
+<!--end of footer--> 
+
+<!--libraries for carousel--> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!--end of libraries for carousel--> 
+
+<!--Javacript--> 
+<script>
+/*global $*/ 
+/*global anime*/
+  
+  $(function(){
+      $('.carousel').carousel({
+        interval:1000, 
+        pause: false,
+        wrap: false,
+        keyboard: true
+  });
+  
+  }); 
+  
+  
+// Wrap every letter in a span
+$('.ml11 .letters').each(function(){
+  $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
+});
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml11 .line',
+    scaleY: [0,1],
+    opacity: [0.5,1],
+    easing: "easeOutExpo",
+    duration: 700
+  })
+  .add({
+    targets: '.ml11 .line',
+    translateX: [0,$(".ml11 .letters").width()],
+    easing: "easeOutExpo",
+    duration: 700,
+    delay: 100
+  }).add({
+    targets: '.ml11 .letter',
+    opacity: [0,1],
+    easing: "easeOutExpo",
+    duration: 600,
+    offset: '-=775',
+    delay: function(el, i) {
+      return 34 * (i+1)
+    }
+  }).add({
+    targets: '.ml11',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+  
+</script>
+
+<!--end of Javascript--> 
+
+</body>
+</html>

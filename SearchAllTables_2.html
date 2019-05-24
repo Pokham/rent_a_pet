@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rent-A-Pet Table Query</title>
+</head>
+
+<body>
+  <h1>For each table, perform a query to show all data:</h1>
+
+  <form action="QueryAllTables.php" method="post">
+  <p><strong>Choose Search Type:</strong><br />
+  <select name="searchtype">
+  <option value="Author">Person Name</option>
+  <option value="Title">Gift Name</option>
+  <option value="ISBN">Priority Number</option>
+  </select>
+  </p>
+  <p><strong>Enter Search Term:</strong><br />
+  <input name="searchterm" type="text" size="40"></p>
+
+  <p><input type="submit" name="submit" value="Search"></p>
+  </form>
+
+</body>
+</html>
